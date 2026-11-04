@@ -1,0 +1,21 @@
+# Entorno
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Datos generados
+warehouse/
+data/
+*.duckdb
+*.duckdb.wal
+
+# Orquestación
+.dagster/
+logs/
+
+# Sistema
+.DS_Store
+*.log
