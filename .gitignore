@@ -6,16 +6,25 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Datos generados
+# Datos generados por los labs de cada nivel
 warehouse/
-data/
+level-*/warehouse/
+level-*/data/
 *.duckdb
 *.duckdb.wal
 
+# El dataset de entrada del Level 0 sí se versiona: el primer pipeline lo lee.
+!level-0/data/
+!level-0/data/**
+
 # Orquestación
 .dagster/
-logs/
+.dagster_home/
+level-*/logs/
+level-*/state/
+level-*/output/
 
 # Sistema
 .DS_Store
 *.log
+.level-0/
