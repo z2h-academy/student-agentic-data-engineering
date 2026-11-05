@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tutor": {
+      "type": "http",
+      "url": "https://harness.z2h-academy.com/mcp"
+    }
+  }
+}
